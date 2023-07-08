@@ -3,6 +3,8 @@ echo ---------ENV---------
 cat .env
 echo -------ENV-END-------
 
-
-sudo ufw.sh
-sudo code-server.sh
+sudo apt update
+sudo ./scripts/ufw.sh
+sudo ./scripts/nginx.sh
+sudo ./scripts/certbot.sh
+sudo ./scripts/code-server.sh
