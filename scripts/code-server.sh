@@ -5,4 +5,8 @@ cp ../configs/code-server/nginx/sites-available /etc/nginx/sites-available/code-
 sudo ln -s /etc/nginx/sites-available/code-server /etc/nginx/sites-enabled/code-server
 sudo certbot --non-interactive --redirect --agree-tos --nginx -d "vscode.${SERVER_DOMAIN}" -m $EMAIL
 
-sudo systemctl enable --now code-server@$USER
+adduser --gecos "" --disabled-password vscode
+chpasswd <<<"vscode:vscode"  # set password
+# usermod -aG sudo vscode  # grant sudo permission
+
+sudo systemctl enable --now code-server@vscode
