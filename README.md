@@ -6,3 +6,8 @@ create .env file before run main.sh
 
 ## TODO:
 - https://github.com/trick77/ipset-blacklist
+
+
+## nginx PORTS
+code-server: 8080
+guacamole: 0808
