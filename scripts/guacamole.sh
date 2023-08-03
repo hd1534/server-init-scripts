@@ -1,5 +1,8 @@
 # run guacamole
 cd ../configs/guacamole/docker
+mkdir ./init
+chmod -R +x ./init
+docker run --rm guacamole/guacamole /opt/guacamole/bin/initdb.sh --postgresql > ./init/initdb.sql
 docker compose up -d
 
 # cert
