@@ -1,6 +1,6 @@
 # run guacamole
 cd ../configs/guacamole/docker
-docker compose up
+docker compose up -d
 
 # cert
 cp ../configs/guacamole/nginx/sites-available /etc/nginx/sites-available/guacamole
