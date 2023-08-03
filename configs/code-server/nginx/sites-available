@@ -1,7 +1,7 @@
 server {
     listen 80;
     listen [::]:80;
-    server_name contabo.nahjh2.com;
+    server_name vscode.contabo.nahjh2.com;
 
     location / {
       proxy_pass http://localhost:8080/;
