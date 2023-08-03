@@ -12,3 +12,4 @@ sudo ./scripts/git.sh
 sudo ./scripts/nginx.sh
 sudo ./scripts/certbot.sh
 sudo ./scripts/code-server.sh
+sudo ./scripts/docker.sh
